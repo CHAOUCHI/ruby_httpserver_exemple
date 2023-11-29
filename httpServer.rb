@@ -1,6 +1,7 @@
 require "socket"
 # create the server
 server = TCPServer.new("localhost",8080)
+puts "Server listen on localhost:8080"
 
 # A function that send an html page or a 404 error
 def sendHTMLPage(file_name,socket)
